@@ -1,0 +1,615 @@
+/* ================= Continuação da seção proejtos ================= */
+
+.project-video {
+  position: relative;
+  width: 85%;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.project-video video {
+  width: 100%;
+  display: block;
+}
+
+.project-tech {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .porject-overlay {
+  opacity: 1;
+}
+
+.project-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: scale(1.1);
+}
+
+.video-buttons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-video:hover .video-buttons {
+  opacity: 1;
+}
+
+.video-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.3s ease;
+}
+
+.video-btn:hover {
+  transform: scale(1.15);
+}
+
+/* ================= Conhecimentos ================= */
+
+
+.skills {
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    padding: 120px 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--aqua);
+    text-align: center;
+}
+
+.skills-grid {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 360px;
+    height: 360px;
+    background: #111;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    color: #ffffff;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  background: #1a1a1a;
+  transform: translateY(-6px);
+}
+
+.skill-card img {
+  width: 86px;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffffd5;
+}
+
+.skill-card p {
+  font-size: 15px;
+  opacity: 0.85;
+  line-height: 1.9;
+  font-weight: 550;
+}
+
+
+/* ================= Contato ================= */
+.contact {
+  background: #111;
+  padding: 120px 40px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 160px;
+}
+
+.contact-title {
+  font-size: 63px;
+  font-weight: 700;
+  color: var(--aqua);
+  text-align: left;
+}
+
+.contact-info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-link {
+  font-size: 20px;
+  color: #ffffffb7;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  margin-left: 270px;
+}
+
+.contact-link:hover {
+  opacity: 0.7;
+}
+
+.whatsapp-button {
+  margin-top: 20px;
+  margin-left: 270px;
+  width: 220px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  border: 2px solid #25D366;
+  background: transparent;
+  color: #25D366;
+  text-decoration: none;
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background: #25D366;
+  color: #000;
+}
+
+.whatsapp-button i {
+  font-size: 30px;
+}
+
+.contact-link i {
+  color: var(--aqua);
+}
+
+.hero-image {
+ pointer-events: none;
+  margin-top: -350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image img {
+  margin-left: 500px;
+  width: 540px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.shadow {
+  margin-left: 510px;
+  width: 200px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.644);
+  border-radius: 50%;
+  margin-top: -90px;
+  filter: blur(6px);
+  animation: shadow 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.linha-divisoria {
+  width: 1200px;
+  margin: 130px auto;
+}
+
+.nome-link {
+  text-decoration: none;
+}
+
+.douglas {
+  font-size: 35px;
+  margin-top: -60px;
+  margin-left: 130px;
+  color: #b4b1b1b2;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.douglas:hover {
+  opacity: 0.7;
+}
+
+.direitos {
+  margin-left: 130px;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #b4b1b1b2;
+  letter-spacing: 1px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+  padding-right: 160px;
+
+  margin-top: -80px;
+}
+
+.footer-social a {
+  color: #00aaff;
+  font-size: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-4px);
+  opacity: 0.8;
+}
+
+.footer-social a:nth-child(1):hover {
+  color: #E1306C;
+  transform: translateY(-4px);
+}
+
+.footer-social a:nth-child(2):hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+.footer-social a:nth-child(3):hover {
+  color: #0077B5;
+  transform: translateY(-4px);
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #39d1ff;
+  transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #5ed9ff;
+  text-shadow: 0 0 8px #5edaff;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+  box-shadow: 0 0 8px #00c3ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+ transition: opacity 0.8s ease;
+}
+
+body.loading {
+  opacity: 0;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ================= Botão do Modo Claro do site ================= */
+.theme-switch {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+
+  width: 110px;
+  height: 45px;
+
+  border: 2px solid var(--aqua);
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.theme-switch .icon {
+  font-size: 18px;
+  color: var(--aqua);
+  z-index: 2;
+}
+
+.switch-ball {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: var(--aqua);
+  border-radius: 50%;
+
+  left: 5px;
+  transition: 0.3s ease;
+}
+
+.light-mode .switch-ball {
+  left: 65px;
+}
+
+/* ===================================================== */
+/* =================== Modo claro ================== */
+/* ===================================================== */
+
+.light-mode {
+  background: #ffffff;
+  color: #111;
+}
+
+.light-mode body,
+.light-mode section,
+.light-mode div,
+.light-mode .project-card,
+.light-mode .skill-card {
+  transition: background 0.4s ease color 0.4s ease;
+}
+
+/* ================= TEXTO ================= */
+
+.light-mode p,
+.light-mode li,
+.light-mode span,
+.light-mode a,
+.light-mode small,
+.light-mode label {
+  color: #111;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4 {
+  color: var(--aqua);
+}
+
+/* ================= SEÇÕES ================= */
+
+/* Seção padrão branca */
+.light-mode section {
+  background: #ffffff;
+}
+
+.light-mode .projects,
+.light-mode .skills {
+  background: #f3f3f3;
+}
+
+.light-mode .contact {
+  background: #f7f7f7;
+}
+
+/* ================= CARDS ================= */
+
+.light-mode .project-card,
+.light-mode .skill-card {
+  background: #ffffff;
+  color: #222;
+
+  box-shadow: 
+    0 4px 15px rgba(0,0,0,0.05),
+    0 1px 3px rgba(0,0,0,0.08);
+
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.light-mode .skill-card:hover,
+.light-mode .project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 8px 25px rgba(0,0,0,0.08),
+    0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* ================= SKILLS ================= */
+
+.light-mode .skill-card p {
+  color: #333;
+}
+
+.light-mode .skill-card h3 {
+  color: #222;
+}
+
+/* ================= VIDEO ================= */
+
+.light-mode .video-btn {
+  background: #ffffff;
+  color: #111;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.light-mode .video-btn:hover {
+  transform: scale(1.15);
+}
+
+/* ================= NAV ================= */
+
+.light-mode nav a {
+  color: #222;
+}
+
+.light-mode nav a:hover,
+.light-mode nav a.active {
+  color: var(--aqua);
+  text-shadow: 0 0 8px rgba(0, 200, 255, 0.4);
+}
+
+/* ================= CONTACT ================= */
+
+.light-mode .contact-link {
+  color: #222;
+}
+
+.light-mode .whatsapp-button {
+  background: transparent;
+}
+
+.light-mode .whatsapp-button:hover {
+  background: #25D366;
+  color: #000;
+}
+
+/* ================= FOOTER ================= */
+
+.light-mode .direitos,
+.light-mode .douglas {
+  color: #555;
+}
+
+/* ================= THEME SWITCH ================= */
+
+.light-mode .theme-switch {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.light-mode .switch-ball {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+  
+  background: var(--aqua);
+  color: #000;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s ease;
+
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
