@@ -377,12 +377,15 @@ nav ul li a:hover::after {
   }
 
 
-  .projects-grid {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.projects-grid {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
 
   @media (max-width: 760px) {
     .projects-container {
@@ -403,7 +406,6 @@ nav ul li a:hover::after {
   height: 360px;
   background: #111;
   border-radius: 16px;
-  margin-left: 40px;
 
   display: flex;
   flex-direction: column;
